@@ -243,9 +243,23 @@
       .subnav {
         width: 100%;
         height: 61px;
-        background-color: white;
+        background-color: #eeeeee;
         position: absolute;
         z-index: 2;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 980px;
+        margin: auto;
+        box-sizing: content-box;
+      }
+      .subnav .appleid2 {
+        line-height: 61px;
+        font-size: 24px;
+        font-weight: 560;
+        font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        color: #333;
       }
       }
     </style>
@@ -270,13 +284,14 @@
       </div>
 
     </nav>
-
     <div class="subnav">
-      <div class="appleid2">Apple ID</div>
-      <div class="menu">
-        <a href="#">Sign in</a>
-        <a href="#">Create Your Apple ID</a>
-        <a href="#">FAQ</a>
+      <div class="container">
+        <div class="appleid2">Apple&nbsp;ID</div>
+        <div class="menu">
+          <a href="#">Sign in</a>
+          <a href="#">Create Your Apple ID</a>
+          <a href="#">FAQ</a>
+        </div>
       </div>
     </div>
 
