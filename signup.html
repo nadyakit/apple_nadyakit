@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mailtoharshit/San-Francisco-Font-/sanfrancisco.css">
+    <title></title>
+    <style media="screen">
+      * {
+        /* font-family: "sanfrancisco"; */
+        box-sizing: border-box;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      form > p,
+      form > span,
+      form > h3 {
+        display: block;
+        width: 460px;
+        position: relative;
+        margin: 10px auto;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="password"],
+      select {
+        display: block;
+        width: 460px;
+        position: relative;
+        margin: 10px auto;
+        height: 46px;
+        padding: 0 18px;
+        font-size: 17px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+      }
+      hr {
+        width: 1100px;
+        display: block;
+        margin: 15px auto;
+        border: none;
+        border-bottom: 1px solid #ddd;
+      }
+      button {
+        font-size: 17px;
+        line-height: 1.47059;
+        font-weight: 400;
+        letter-spacing: -.022em;
+        font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        background-color: #0070c9;
+        background: linear-gradient(#42a1ec,#0070c9);
+        border: 1px solid #07c;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        min-width: 30px;
+        padding: 4px 15px;
+        text-align: center;
+        white-space: nowrap;
+        margin: 15px auto;
+    }
+      .form-split {
+        width: 460px;
+        position: relative;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      .form-split input {
+        display: inline-block;
+        width: 220px;
+        margin: 0;
+      }
+      .checkbox-list,
+      .radio-list {
+        width: 460px;
+        position: relative;
+        margin: 15px auto;
+        display: block;
+      }
+      .checkbox-list {
+        padding-left: 20px;
+      }
+      .checkbox-list input {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .checkbox-list span {
+        display: block;
+        font-size: 14px;
+        color: #999;
+      }
+      .radio-list > * {
+        width: auto;
+        display: inline-block;
+        margin-right: 15px;
+      }
+      .menu-search {
+        display: none;
+      }
+      nav {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 46px;
+        background: rgba(0, 0, 0, 0.8);
+      }
+      nav > div {
+        width: 1024px;
+        display: block;
+        position: relative;
+        height: 100%;
+        margin: 0 auto;
+      }
+      .menu-items {
+        display: flex;
+        justify-content: space-between;
+      }
+      .menu-items a {
+        line-height: 46px;
+        color: white;
+        opacity: .8;
+        text-decoration: none;
+      }
+      .banner {
+        display: block;
+        width: 100%;
+        height: 300px;
+        background: #111;
+        overflow: hidden;
+        position: relative;
+
+      }
+      .banner h1 {
+        text-align: center;
+        color: white;
+        margin-top: 120px;
+        z-index: 10;
+        position: absolute;
+        width: 100%
+      }
+      .color-block {
+        position: absolute;
+        display: block;
+        width: 400px;
+        height: 400px;
+        left: calc(50% - 200px);
+        top: -50px;
+        animation: colors 70s linear infinite;
+
+      }
+      .circle {
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        filter: blur(140px);
+      }
+      .cl0 {
+        background: #c10101;
+        top: 0;
+        left: 20%;
+      }
+      .cl1 {
+        background: #0101c1;
+        top: 0;
+        right: 0;
+      }
+      .cl2 {
+        background: #c101c1;
+        left: 0;
+        bottom: 0;
+      }
+      .cl3 {
+        background: #c1c101;
+        right: 10%;
+        bottom: 0;
+      }
+      @keyframes colors {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="menu-items">
+        <a href="#">Logo</a>
+        <a href="#">Mac</a>
+        <a href="#">iPad</a>
+        <a href="#">iPhone</a>
+        <a href="#">Watch</a>
+        <a href="#">TV</a>
+        <a href="#">Music</a>
+        <a href="#">Support</a>
+        <a href="#">Search</a>
+        <a href="#">Cart</a>
+      </div>
+      <div class="menu-search">
+        <span></span> <input type="text" name="" value=""> <a href="#"></a>
+      </div>
+    </nav>
+
+    <div class="banner">
+      <div class="color-block">
+        <div class="circle cl0"></div>
+        <div class="circle cl1"></div>
+        <div class="circle cl2"></div>
+        <div class="circle cl3"></div>
+      </div>
+      <h1>Создание Apple ID</h1>
+    </div>
+
+    <form class="" action="index.html" method="post">
+      <p> Одного Apple ID достаточно для доступа ко всем сервисам Apple.
+Уже есть Apple ID?  <a href="https://iforgot.apple.com/appleid">Найдите его здесь</a> </p>
+      <div class="form-split">
+        <input type="text" name="" value="" placeholder="Имя">
+        <input type="text" name="" value="" placeholder="Фамилия">
+      </div>
+      <h3>СТРАНА/РЕГИОН</h3>
+      <select class="" name="">
+        <option value="">Россия</option>
+        <option value="">УКРАИНА!!!!</option>
+      </select>
+      <input type="text" name="" value="" placeholder="Дата рождения">
+      <hr>
+      <input type="email" name="" value="" placeholder="name@example.com">
+      <span>Это Ваш новый Apple ID.</span>
+      <input type="password" name="" value="" placeholder="Пароль">
+      <input type="password" name="" value="" placeholder="Подтвердите пароль">
+      <hr>
+      <select class="" name="">
+        <option value="">(+7) Россия </option>
+        <option value=""> (+1) США </option>
+      </select>
+      <input type="tel" name="" value="" placeholder="Номер телефона">
+      <span>Введите номер телефона, который всегда доступен. Этот номер будет использоваться для подтверждения личности при выполнении входа на новом устройстве или в новом браузере. За обмен сообщениями и передачу данных может взиматься плата.</span>
+      <div class="radio-list">
+        <p>Подтвержение:</p>
+        <div class="">
+          <input type="radio" name="phoneproof" value="">
+          <label for="">Текстовое сообщение</label>
+        </div>
+        <div class="">
+          <input type="radio" name="phoneproof" value="">
+          <label for="">Телефонный звонок</label>
+        </div>
+      </div>
+      <hr>
+      <label class="checkbox-list" for=""> <input type="checkbox" name="" value="">Анонсы <span>Получайте сообщения о выходе обновлений, рекомендации и информацию о новых продуктах, программном обеспечении и услугах компании Apple.</span> </label>
+      <label class="checkbox-list" for=""> <input type="checkbox" name="" value="">Приложения, музыка, фильмы, телешоу и многое другое <span>Получайте эксклюзивный контент, информацию о релизах, специальные предложения и рекомендации по приложениям, музыке, фильмам, телешоу, книгам, подкастам, Apple Pay и многому другому.</span> </label>
+      <hr>
+      <p>Данные Вашего Apple ID используются для безопасного входа в учетную запись и доступа к персональной информации. Apple сохраняет некоторые данные в целях обеспечения безопасности, поддержки и составления отчетов. <a href="https://support.apple.com/ru-ru/HT208650">Как осуществляется управление данными.</a>
+      </p>
+      <button type="submit" name="button">Продолжить</button>
+    </form>
+
+  </body>
+</html>
